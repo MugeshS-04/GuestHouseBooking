@@ -1,0 +1,162 @@
+.container {
+    border: 0px;
+    padding: 10;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 0px 20px;
+    padding: 10vh;
+}
+
+.box1 {
+    background-color: #fbfbfb;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center; 
+    border-radius: 20px;  
+}
+
+
+.box1:hover {
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+
+.tooltip_text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .box1:hover .tooltip_text {
+    visibility: visible;
+  }
+
+  .box1:hover img{
+    backdrop-filter: blur(10px);
+  }
+
+
+  .tooltip_text {
+    top: 20%; 
+    left: 40%;
+  }
+  
+  
+.box1 img {
+    align-self: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.box1 .box h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 30px;
+}
+
+.buttons p:nth-child(1) {   
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+.buttons .button {
+    background-color: rgb(2, 59, 53);
+    border: 2px solid;
+    color: aliceblue;
+    padding: 10px;
+}
+
+
+.book_button {
+    background-color: rgb(2, 59, 53);
+    border: 2px solid;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:end;
+}
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 10px;
+}
+
+.row {
+    height: 100px;
+    color: #fbfbfb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.column p {
+    text-align: center;
+}
+
+.column select {
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+.row input{
+    padding: 10px;
+    outline: none;
+}
+
+.row input:focus {
+    outline: 2px solid rgb(2, 59, 53);
+}
+@media (max-width:1000px) {
+    .grid{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:700px) {
+    .grid{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,31 @@
+.bigimg{
+    width:100%;
+    height:100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width:140vh;
+    height: 80vh;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left{
+    width:70vh;
+    height:100%;
+    padding: 10px;
+    
+}
+.right{
+    width:70vh;
+    height:100%;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0
+}

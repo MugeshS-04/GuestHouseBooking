@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .column {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10vh;
+}
+
+.booking{
+    display: flex;
+    gap: 20px;
+}
+
+.booking img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.booking .content{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.booking .button {
+    background-color: rgb(2, 59, 53);
+    border: 2px solid;
+    color: aliceblue;
+    padding: 10px;
+}
